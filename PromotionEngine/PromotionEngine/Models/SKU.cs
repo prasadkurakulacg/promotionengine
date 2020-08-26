@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace PromotionEngine
+namespace PromotionEngine.Models
 {
     public class SKU
     {
