@@ -33,9 +33,9 @@ namespace PromotionEngine.Models
             Count = count;
         }
 
-        public SKU(string id,int count,int actualPrice,int offerCount,int offerPrice)
+        public SKU(string id, int count, int actualPrice, int offerCount, int offerPrice)
         {
-            Id = id;
+            Id = id ?? throw new ArgumentException("Product name is must");
             Count = count;
             ActualPrice = actualPrice;
             OfferCount = offerCount;
