@@ -9,6 +9,8 @@ namespace PromotionEngine.Models
         public string Id { get; set; }
         public int Count { get; set; }
 
+        public int Price { get; set; }
+
 
         public SKU(string input)
         {
@@ -27,6 +29,13 @@ namespace PromotionEngine.Models
         {
             Id = productId;
             Count = count;
+        }
+
+        public SKU(string id,int count,int price)
+        {
+            Id = id;
+            Count = count;
+            Price = price;
         }
     }
 }

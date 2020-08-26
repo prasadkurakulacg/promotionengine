@@ -7,6 +7,7 @@ namespace PromotionEngine.CalculationEngine
 {
     interface IPromotion<T> where T : List<SKU>
     {
-        int ApplyPromotion();
+        int ApplySinglePromotion(int count, int price);
+        int ApplyComboPromotion(int item1Count, int item1Price, int item2Count, int item2Price);
     }
 }
