@@ -33,11 +33,11 @@ namespace PromotionEngine.Models
             Count = count;
         }
 
-        public SKU(string id,int count,int price,int offerCount,int offerPrice)
+        public SKU(string id,int count,int actualPrice,int offerCount,int offerPrice)
         {
             Id = id;
             Count = count;
-            ActualPrice = price;
+            ActualPrice = actualPrice;
             OfferCount = offerCount;
             OfferPrice = offerPrice;
         }
