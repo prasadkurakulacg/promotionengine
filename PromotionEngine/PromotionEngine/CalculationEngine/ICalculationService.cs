@@ -5,7 +5,7 @@ using System.Text;
 
 namespace PromotionEngine.CalculationEngine
 {
-    public interface ICalculationService<T> where T : List<SKU>
+    public interface ICalculationService
     {
         int CalculateCart();
     }
